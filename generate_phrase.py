@@ -151,7 +151,5 @@ def gen():
         phrase = phrase.replace("#firstname#", random_firstname(), 1)
         phrase = phrase.replace("#lastname#", random_lastname(), 1)
         phrase = phrase.replace("#number#", str(random.randint(1, 1000)), 1)
+    print(phrase)
     return phrase
-
-
-print(phrase)
