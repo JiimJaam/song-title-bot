@@ -1,0 +1,50 @@
+#verb# the #noun#
+#verb# the #noun.s#
+#noun#
+#noun.s#
+The #noun#
+#adjective# #noun#
+#adjective# #noun.s#
+The #adjective# #noun.s#
+#adjective# #noun.s#
+#verb# #noun#
+Anti-#noun#
+#verb# All #noun.s#
+#verb# All Night
+In the #noun# Over the #noun#
+The #noun# Song
+#noun# Song
+#firstname# #lastname# Five
+The #firstname# #lastname# Band
+#firstname# #lastname# and the #adjective# #noun.s#
+#firstname# #lastname# and the #noun.s#
+#firstname# and the #adjective# #noun.s#
+#firstname# and the #noun.s#
+#adjective#play
+Dr. #noun#
+#noun.s# 'n' #noun.s#
+#noun.s# of the #adjective# Age
+#adjective# #lastname# Band
+The #firstname# #lastname# Experience
+The #adjective# Album
+#firstname# and the #adjective# Bunch
+Song for the #noun.s#
+Another Song About #noun.s#
+The #noun# Store
+Year of the #noun#
+Death to #noun.s#
+#firstname#'s Mom
+#firstname#'s Song
+#verb#, #verb#, #verb#
+Don't #verb# the #noun#
+#verb# My #noun#
+#verb#
+#adjective# #firstname#
+The #city# #noun#
+The #noun# from #city#
+The #noun# #noun#
+#noun# in #city#
+#number# #noun.s#
+The #noun# #verb.ers#
+#firstname# #verb.ed# the #noun#
+Get #verb.ed#
