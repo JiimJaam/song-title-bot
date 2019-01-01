@@ -30,6 +30,7 @@ cop
 cop
 cow
 cowboy
+cream
 cunt
 cure
 dad
