@@ -11,6 +11,7 @@ bed
 beer
 birthday
 bitch
+blood
 blur
 boat
 boss
@@ -79,6 +80,7 @@ mouse
 mouth
 Nazi
 night
+ninja
 noise
 oasis
 ocean
@@ -100,6 +102,7 @@ sandstorm
 scene
 school
 sea
+sex
 shadow
 sheep
 shit

@@ -1,10 +1,17 @@
+amaze
 bash
+bounce
+box
+burn
 catch
+chase
 clash
 crush
+cry
 cure
 cut
 destroy
+disgust
 disturb
 drive
 end
@@ -19,8 +26,11 @@ kick
 kill
 kiss
 know
+lick
 love
+milkW
 murder
+party
 piss
 play
 punch
@@ -46,3 +56,4 @@ taste
 touch
 walk
 weaponize
+weep

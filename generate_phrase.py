@@ -14,37 +14,40 @@ def random_noun():
 
 
 def pluralnoun(a):
-    pluralnoun = a
-    spec = False
+    pn = a
 
-    if pluralnoun[-1:] == "y":
-        if pluralnoun[-2] != "a" and pluralnoun[-2] != "e" and pluralnoun[-2] != "i" and pluralnoun[-2] != "o" and pluralnoun[-2] != "u" and pluralnoun != "Kennedy":
-            pluralnoun = pluralnoun[:-1] + "ie"
+    if pn[-1:] == "y":
+        if pn == "Kennedy":
+            pn = pn + "s"
+            return pn
+        if pn[-2:] == "ay" or pn[-2:] == "ey" or pn[-2:] == "iy" or pn[-2:] == "oy" or pn[-2] == "uy":
+            pn = pn + "s"
+            return pn
+        else:
+            pn = pn[:-1] + "ies"
+            return pn
+    if pn == "mouse":
+        pn = "mice"
+        return pn
+    if pn == "woman":
+        pn = "women"
+        return pn
+    if pn == "man":
+        pn = "men"
+        return pn
+    if pn == "person":
+        pn = "people"
+        return pn
+    if pn == "blood" or pn == "money" or pn == "meat" or pn == "police" or pn == "dead" or pn == "bread" or pn == "milk" or pn == "sheep":
+        pn = pn
+        return pn
 
-    else:
-        if pluralnoun == "mouse":
-            spec = True
-            pluralnoun = "mice"
-        elif pluralnoun == "woman":
-            spec = True
-            pluralnoun = "women"
-        elif pluralnoun == "men":
-            spec = True
-            pluralnoun = "men"
-        elif pluralnoun == "person":
-            spec = True
-            pluralnoun = "people"
-            spec = True
-        elif pluralnoun == "money" or pluralnoun == "meat" or pluralnoun == "police" or pluralnoun == "dead" or pluralnoun == "bread" or pluralnoun == "milk" or pluralnoun == "sheep":
-            spec = True
-            pluralnoun = pluralnoun
+    if pn[-1:] == "s" or pn[-1:] == "x" or pn[-2:] == "sh" or pn[-2:] == "ch":
+        pn = pn + "es"
+        return pn
 
-    if pluralnoun[-1:] == "s" or pluralnoun[-1:] == "x" or pluralnoun[-2:] == "sh" or pluralnoun[-2:] == "ch":
-        pluralnoun = pluralnoun + "e"
-
-    if spec == False:
-        pluralnoun = pluralnoun + "s"
-    return pluralnoun
+    pn = pn + "s"
+    return pn
 
 
 def random_verb():
@@ -55,58 +58,102 @@ def random_verb():
 
 def verb_ing():
     ing = random_verb()
-    if ing != "reap":
+    if ing != "reap" and ing != "sleep" and ing != "fight" and ing != "scream" and ing != "shoot" and ing != "start" and ing != "stomp" and ing != "burn" and ing != "weep" and ing != "disgust":
         if ing[-1:] == "t" or ing[-1:] == "p" or ing[-1:] == "g" or ing[-1:] == "m" or ing[-1:] == "n" or ing[-1:] == "z":
             ing = ing + ing[-1:] + "ing"
-    elif ing[-1:] == "e":
+            return ing
+    if ing[-1:] == "e":
         ing = ing[:-1] + "ing"
-    else:
-        ing = ing + "ing"
+        return ing
+    ing = ing + "ing"
     return ing
 
 
 def verb_er():
     er = random_verb()
-    if er != "reap" and er != "sleep" and er != "fight" and er != "scream" and er != "shoot" and er != "start" and er != "stomp":
+    if er != "reap" and er != "sleep" and er != "fight" and er != "scream" and er != "shoot" and er != "start" and er != "stomp" and er != "burn" and er != "weep" and er != "disgust":
         if er[-1:] == "t" or er[-1:] == "p" or er[-1:] == "g" or er[-1:] == "m" or er[-1:] == "n" or er[-1:] == "z":
-            er = er + er[-1:]
+            er = er + er[-1:] + "er"
+            return er
+    if er[-1:] == "y":
+        if er[-2:] == "ay" or er[-2:] == "ey" or er[-2:] == "iy" or er[-2:] == "oy" or er[-2:] == "uy":
+            er = er[:-1] + "ier"
+            return er
+        else:
+            er = er + "er"
+            return er
     if er[-1:] == "e":
-        er = er[:-1]
+        er = er + "r"
+        return er
     er = er + "er"
     return er
+
+
+def verb_s():
+    pv = random_verb()
+    if pv[-1:] == "s" or pv[-1:] == "x" or pv[-2:] == "sh" or pv[-2:] == "ch":
+        pv = pv + "es"
+        return pv
+    if pv[-1:] == "y":
+        if pv[-2:] == "ay" or pv[-2:] == "ey" or pv[-2:] == "iy" or pv[-2:] == "iy" or pv[-2:] == "oy" or pv[-2:] == "uy":
+            pv = pv + "s"
+            return pv
+        else:
+            pv = pv[:-1] + "ies"
+            return pv
+    pv = pv + "s"
+    return pv
 
 
 def verb_ed():
     ed = random_verb()
     if ed == "catch":
         ed = "caught"
-    elif ed == "fly":
+        return ed
+    if ed == "fly":
         ed = "flew"
-    elif ed == "drive":
+        return ed
+    if ed == "drive":
         ed = "drove"
-    elif ed == "fight":
+        return ed
+    if ed == "fight":
         ed = "fought"
-    elif ed == "get":
+        return ed
+    if ed == "get":
         ed = "got"
-    elif ed == "give":
+        return ed
+    if ed == "give":
         ed = "gave"
-    elif ed == "know":
+        return ed
+    if ed == "know":
         ed = "knew"
-    elif ed == "run":
+        return ed
+    if ed == "run":
         ed = "ran"
-    elif ed == "shoot":
+        return ed
+    if ed == "shoot":
         ed = "shot"
-    elif ed == "sleep":
+        return ed
+    if ed == "sleep":
         ed = "slept"
-    elif ed == "cut" or ed == "hit" or ed == "shit":
+        return ed
+    if ed == "cut" or ed == "hit" or ed == "shit":
         ed = ed
-    else:
-        if ed != "reap" and ed != "sleep" and ed != "fight" and ed != "scream" and ed != "shoot" and ed != "start" and ed != "stomp":
-            if ed[-1:] == "t" or ed[-1:] == "p" or ed[-1:] == "g" or ed[-1:] == "m" or ed[-1:] == "n" or ed[-1:] == "z":
-                ed = ed + ed[-1:] + "ed"
-        if ed[-1:] == "e":
-            ed = ed[:-1]
-        ed = ed + "ed"
+        return ed
+    if ed != "reap" and ed != "sleep" and ed != "fight" and ed != "scream" and ed != "shoot" and ed != "start" and ed != "stomp" and ed != "burn" and ed != "weep" and ed != "disgust":
+        if ed[-1:] == "t" or ed[-1:] == "p" or ed[-1:] == "g" or ed[-1:] == "m" or ed[-1:] == "n" or ed[-1:] == "z":
+            ed = ed + ed[-1:] + "ed"
+    if ed[-1:] == "y":
+        if ed[-2:] == "ay" or ed[-2:] == "ey" or ed[-2:] == "iy" or ed[-2:] == "oy" or ed[-2:] == "uy":
+            ed = ed[:-1] + "ied"
+            return ed
+        else:
+            ed = ed + "ed"
+            return ed
+    if ed[-1:] == "e":
+        ed = ed + "d"
+        return ed
+    ed = ed + "ed"
     return ed
 
 
@@ -137,7 +184,7 @@ def random_lastname():
 def gen():
     phrase = random_phrase()
     phrase2 = ""
-    while(phrase2 != phrase):
+    while phrase2 != phrase:
         phrase2 = phrase
         phrase = phrase.replace("#noun#", random_noun().capitalize(), 1)
         phrase = phrase.replace("#noun.s#", pluralnoun(random_noun()).capitalize(), 1)
@@ -146,6 +193,7 @@ def gen():
         phrase = phrase.replace("#verb.ers#", pluralnoun(verb_er()).capitalize(), 1)
         phrase = phrase.replace("#verb.ing#", verb_ing().capitalize(), 1)
         phrase = phrase.replace("#verb.ed#", verb_ed().capitalize(), 1)
+        phrase = phrase.replace("#verb.s#", verb_s().capitalize(), 1)
         phrase = phrase.replace("#adjective#", random_adjective().capitalize(), 1)
         phrase = phrase.replace("#city#", random_city(), 1)
         phrase = phrase.replace("#firstname#", random_firstname(), 1)
@@ -153,3 +201,6 @@ def gen():
         phrase = phrase.replace("#number#", str(random.randint(1, 1000)), 1)
     print(phrase)
     return phrase
+
+
+gen()

@@ -24,7 +24,7 @@ The #firstname# #lastname# Band
 Dr. #noun#
 #noun.s# 'n' #noun.s#
 #noun.s# of the #adjective# Age
-#adjective# #lastname# Band
+The #adjective# #lastname# Band
 The #firstname# #lastname# Experience
 The #adjective# Album
 #firstname# and the #adjective# Bunch
@@ -43,8 +43,16 @@ Don't #verb# the #noun#
 The #city# #noun#
 The #noun# from #city#
 The #noun# #noun#
-#noun# in #city#
+#noun.s# in #city#
 #number# #noun.s#
 The #noun# #verb.ers#
 #firstname# #verb.ed# the #noun#
 Get #verb.ed#
+#noun# #noun#
+A Night at the #noun#
+A Day at the #noun#
+A Rush of #noun.s# to the Head
+Too Many #noun.s#
+While My #noun# Gently #verb.s#
+#verb.ing# #noun.s#
+#verb# It
