@@ -1,5 +1,6 @@
 Armstrong
 Berry
+Bon Jovi
 Bowie
 Burnett
 Cobain
@@ -20,5 +21,6 @@ Ono
 Parsons
 Rollins
 Springsteen
+Van Halen
 West
 Williams
