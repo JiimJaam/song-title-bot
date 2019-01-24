@@ -38,7 +38,7 @@ def pluralnoun(a):
     if pn == "person":
         pn = "people"
         return pn
-    if pn == "blood" or pn == "money" or pn == "meat" or pn == "police" or pn == "dead" or pn == "bread" or pn == "milk" or pn == "sheep":
+    if pn == "blood" or pn == "money" or pn == "meat" or pn == "police" or pn == "dead" or pn == "bread" or pn == "milk" or pn == "sheep" or pn == "scum":
         pn = pn
         return pn
 
