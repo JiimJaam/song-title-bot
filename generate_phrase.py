@@ -76,7 +76,7 @@ def verb_er():
             er = er + er[-1:] + "er"
             return er
     if er[-1:] == "y":
-        if er[-2:] == "ay" or er[-2:] == "ey" or er[-2:] == "iy" or er[-2:] == "oy" or er[-2:] == "uy":
+        if er[-2:] != "ay" and er[-2:] != "ey" and er[-2:] != "iy" and er[-2:] != "oy" and er[-2:] != "uy":
             er = er[:-1] + "ier"
             return er
         else:
@@ -144,7 +144,7 @@ def verb_ed():
         if ed[-1:] == "t" or ed[-1:] == "p" or ed[-1:] == "g" or ed[-1:] == "m" or ed[-1:] == "n" or ed[-1:] == "z":
             ed = ed + ed[-1:] + "ed"
     if ed[-1:] == "y":
-        if ed[-2:] == "ay" or ed[-2:] == "ey" or ed[-2:] == "iy" or ed[-2:] == "oy" or ed[-2:] == "uy":
+        if ed[-2:] != "ay" and ed[-2:] != "ey" and ed[-2:] != "iy" and ed[-2:] != "oy" and ed[-2:] != "uy":
             ed = ed[:-1] + "ied"
             return ed
         else:
